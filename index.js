@@ -2,6 +2,10 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
+app.get("/", (req, res) => {
+  res.redirect("/epsilon");
+});
+
 app.get("/epsilon", (req, res) => {
   res.sendFile(path.join(__dirname, "./epsilon.html"));
 });
