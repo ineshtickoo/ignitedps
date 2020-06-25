@@ -19,5 +19,5 @@ app.get("/epsilon/guidelines", (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log(`App running on ${port}`);
+  console.log(`App running `);
 });
