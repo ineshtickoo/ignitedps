@@ -18,7 +18,6 @@ app.get("/epsilon/guidelines", (req, res) => {
   res.sendFile(path.join(__dirname, "./epsilonguidelines.html"));
 });
 
-const port = 8080;
-app.listen(port || process.env.PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`App running on ${port}`);
 });
